@@ -45,3 +45,11 @@ nav ul li a{
 nav ul li a:hover {
     color: #a8dadc; /* Hover effect color change */
 }
+.product_container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.product{
+    padding: 20px;
+    text-align: center;
+}
