@@ -65,7 +65,7 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
     transition: box-shadow 0.3s ease;
@@ -110,4 +110,12 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     color: #fff;
+}
+@media(max-width:600px){
+    .header_Container{
+        justify-content: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
 }
