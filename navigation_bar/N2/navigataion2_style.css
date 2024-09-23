@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* this section is for 1st navigation */
 .header_div {
   max-width: 100%;
   display: flex;
@@ -22,34 +23,34 @@
   margin-left: auto;
   
 }
-.logo {
+.logo1 {
   margin-left: 20px;
   
 }
-nav{
+.nav1{
   order: 1;
 }
-.button_{
+.button1{
   order: 2;
 }
-nav ul {
+.nav1 ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   gap: 10px;
   margin-left: 10px;
 }
-nav ul li a {
+.nav1 ul li a {
   cursor: pointer;
   color: #fff;
   text-decoration: none;
   padding: 5px;
   transition: color 0.5s;
 }
-nav ul li a:hover{
+.nav1 ul li a:hover{
     color: aquamarine;
 }
-.button_ button{
+.button1 button{
     padding: 10px;
     background-color: #2980b9;
     color: #fff;
@@ -60,6 +61,73 @@ nav ul li a:hover{
     text-decoration: none;
     transition: background-color 0.5s;
 }
-.button_ button:hover{
+.button1 button:hover{
+    background-color: #028fee;
+}
+/* 1st  navigation end here */
+/* 2nd navigation start */
+
+.header_div2 {
+  margin-top: 100px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #14212c;
+}
+
+.header_div2 img {
+  
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin-right: auto;
+  
+}
+
+.logo2 {
+  margin-left: 20px;
+  
+}
+.header_div2 img{
+  order: 1;
+}
+.nav2{
+  order: 2;
+}
+.button2{
+  order: 3;
+}
+.nav2 ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  margin-left: 10px;
+}
+.nav2 ul li a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.5s;
+}
+.nav2 ul li a:hover{
+    color: aquamarine;
+}
+.button2 button{
+    padding: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+.button2 button:hover{
     background-color: #028fee;
 }
