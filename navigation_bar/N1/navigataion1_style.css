@@ -54,3 +54,21 @@ nav ul li a:hover{
 .header_div button:hover{
     background-color: #028fee;
 }
+/* add responsive style for mobile phone */
+@media (max-width:650px){
+  .logo{
+    margin-left: 0;
+  }
+  .header_div{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  .header_div button{
+    margin-right: 0;
+  }
+}
