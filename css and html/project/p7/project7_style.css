@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #3498db;
+  padding: 10px;
+}
+.header_container h2 {
+  margin-left: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navigation_bar {
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center the navigation items */
+}
+.navigation_bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+.navigation_bar ul li {
+  list-style: none;
+}
+.navigation_bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #34495e;
+  padding: 5px;
+  border-radius: 20px;
+  transition: background-color 1s;
+}
+.navigation_bar ul li a:hover {
+  background-color: #1abc9c;
+}
+.container1 {
+  background-image: url("./img/container1_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.middle_style{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.middle_style_Button button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #34495e;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    transition: background-color 2s;
+}
+.middle_style_Button button:hover{
+    background-color: #95a5a6;
+}
+/* second section */
+
+.service{
+    margin-top: 20px;
+    text-align: center;
+    padding:30px;
+    background-color: #fff;
+
+}
+.service h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #1abc9c;
+}
+.service ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+}
+.service ul li{
+    margin-top: 10px;
+}
+.about{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #a6aaab;
+}
+.about h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #1abc9c;
+}
+/* contact section */
+.contact{
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    
+}
+.contact h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: red;
+}
+.contact p{
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: color 1s;
+}
+.contact p:hover{
+    color: #1abc9c;
+}
+
+/* footer */
+footer{
+    padding: 15px;
+    background-color: #34495e;
+    text-align: center;
+}
+
