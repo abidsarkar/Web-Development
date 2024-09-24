@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* Center the navigation items */
+  justify-content: center; 
 }
 .navigation_bar ul {
   display: flex;
@@ -51,6 +51,7 @@
   background-position: center;
   height: 400px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -59,6 +60,9 @@
 .middle_style{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+}
+.middle_style h2,p{
+    text-align: center;
 }
 .middle_style_Button button{
     margin-top: 30px;
@@ -141,4 +145,24 @@ footer{
     background-color: #34495e;
     text-align: center;
 }
-
+/* responsive on header for mobile */
+@media (max-width:650px){
+    .header_container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header_container h2{
+        margin-left: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .navigation_bar ul{
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about p{
+        font-size: small;
+    }
+}
