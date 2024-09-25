@@ -50,3 +50,47 @@
 .nav_item a:hover{
     color: #0561c9;
 }
+/* slide bar for added latter as i do not start learning js*/
+.slide {
+    background-image: url("./img/img_lights_wide.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  .middle_style{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 1.2), 0 6px 20px 0 rgba(1, 1, 1, 1.19);
+    transition: transform 1s;
+}
+/* add scale */
+.middle_style:hover{
+    transform: scale(1.2);
+}
+.middle_style h2,p{
+    text-align: center;
+}
+.middle_style_Button button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #34495e;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    transition: background-color 1s;
+}
+.middle_style_Button button:hover{
+    background-color: #0561c9;
+    
+}
