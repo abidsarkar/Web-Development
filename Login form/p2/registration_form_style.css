@@ -13,17 +13,19 @@ body {
   flex-wrap: wrap;
 }
 .container {
-  background: #fff;
+  
   display: flex;
   min-width: 420px;
   min-height: 400px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .content1 {
   background-color: #fff;
   justify-content: center;
   padding: 20px 10px;
+  border-start-end-radius: 30px;
+  border-end-end-radius: 30px;
 
 }
 /* make them divide into two separate content */
@@ -38,17 +40,18 @@ body {
 }
 .content1 .logo {
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: center;
   gap: 20px;
   padding: 5px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .content1 p {
   text-align: center;
   font-size: 1rem;
+  color: #000;
 }
 .content1 .inputBox {
   width: 100%;
@@ -60,10 +63,10 @@ body {
   height: 100%;
   background-color: #eee;
   outline: none;
-  border: none;
+  border: 1px solid #333;
   border-radius: 40px;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
   padding: 20px 45px 20px 20px;
 }
 
@@ -84,10 +87,10 @@ body {
 }
 /* the content2 start here */
 .content2 {
-  /* background-color: #ff4b2b; */
+  
   background-image: linear-gradient(to right, #ff4b2b, #ff416c);
-  /* border-end-end-radius: 30px;
-  border-top-right-radius: 30px; */
+  border-start-start-radius: 30px;
+  border-end-start-radius: 30px; 
   display: flex;
   justify-content: center;
   align-items: center;
