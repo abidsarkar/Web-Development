@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   font-family: "Poppins", system-ui;
   flex-wrap: wrap;
+  background-color: #eee;
 }
 .container {
   
