@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainNav{
+    background-color: aquamarine;
+    padding: 10px;
+}
+.mainNav .mainUl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.mainNav .mainUl .mainLi{
+    list-style: none;
+}
+.mainLi a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
