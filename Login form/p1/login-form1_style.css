@@ -91,6 +91,10 @@ body{
     font-size: 1.3rem;
     color: #333;
     font-weight: 600;
+    transition: border 1s;
+}
+.submit_btn:hover{
+    border: 2px solid brown;
 }
 .warper .register_link{
     font-size: 1.2rem;
