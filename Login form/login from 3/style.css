@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
   }
   
   body {
@@ -23,6 +25,7 @@
     font-size: 32px;
     color: #fff;
     font-weight: bold;
+    user-select: none;
   }
   
   .navigation a {
@@ -118,54 +121,79 @@
     color: #000;
   }
 
-  
   form {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  
-  form input {
-    margin-bottom: 40px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+}
+
+.inputContainer {
+    position: relative;
+    margin-bottom: 40px; /* Consistent spacing as in your original */
+    border-bottom: 2px solid #fff;
+}
+
+.inputContainer input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Adjust padding for icon space */
+    background: none; /* Keep the input background transparent */
+    border: none;
     outline: none;
-  }
-  
-  form input::placeholder {
     color: #000;
-  }
-  
-  .options {
+    font-size: 16px;
+}
+
+.inputContainer input::placeholder {
+    color: #000; /* Keep placeholder color for readability */
+}
+
+.inputContainer i {
+    position: absolute;
+    right: 10px; /* Position icons inside the input fields */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icons */
+    font-size: 18px;
+    color: #000; /* Icon color */
+}
+
+.options {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Aligns "Remember me" and link */
     margin-bottom: 15px;
-    color: #fff;
-  }
-  
-  .options a {
+    color: #000;
+}
+
+.options label {
+    font-size: 14px;
+}
+
+.options a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
-  }
-  
-  .options a:hover {
+}
+
+.options a:hover {
     text-decoration: underline;
-  }
-  
-  .loginButtonForm {
+}
+
+.loginButtonForm {
     padding: 10px;
-    background: #786E79;
-    color: #fff;
+    background: #786E79; /* Button background color */
+    color: #000; /* Button text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    color: #000;
-  }
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.loginButtonForm:hover {
+    background: #5d545d; /* Slightly darker shade on hover */
+}
+
   
   
   
