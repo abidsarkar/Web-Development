@@ -82,6 +82,9 @@ body {
   align-items: center;
   flex: 5;
 }
+.mainMenuHidden{
+  visibility: hidden;
+}
 .loginMenu {
   display: flex;
   flex-direction: column;

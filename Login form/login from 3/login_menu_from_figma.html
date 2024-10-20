@@ -20,12 +20,12 @@
         <a href="#">Services</a></li>
         <a href="#">Contact</a></li>
         <a href="#">About</a></li>
-        <button class="loginButton">login</button>
+        <button class="loginButton" onclick="openMenu()">login</button>
       </nav>
     </div>
     <div class="mainMenu">
-      <div class="loginMenu">
-        <div class="corsBar">
+      <div class="loginMenu" id="login">
+        <div class="corsBar" onclick="closeMenu()">
         </div>
         <h1>LOGIN</h1>
         <form>
@@ -49,6 +49,7 @@
         </form>
       </div>
   </div>
+  <script src="javasctipt.js"></script>
 </body>
 
 </html>
