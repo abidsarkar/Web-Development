@@ -1,199 +1,264 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background: url(./image/bg.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    margin: 75px 225px 10px 225px;
-  }
-  
-  .navigation .logo {
-    font-size: 32px;
-    color: #fff;
-    font-weight: bold;
-    user-select: none;
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #fff;
-    position: relative;
-  }
-  
-  .navigation a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -3px;
-    width: 0;
-    height: 3px;
-    background-color: #fff;
-    transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
-  }
-  
-  .navigation a:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
-  }
-  
-  .loginButton {
-    height: 43px;
-    width: 110px;
-    font-size: 24px;
-    border-radius: 10px;
-    border: 3px solid #fff;
-    background: none;
-    color: #fff;
-    transition: color 0.6s ease-in-out;
-  }
-  
-  .loginButton:hover {
-    color: #000;
-  }
-  
-  .loginMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 500px;
-    width: 400px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .corsBar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px; /* Adjusted width of the box */
-    height: 30px; /* Adjusted height of the box */
-    background: #2A3D55;
-    border: 2px solid #fff; /* Border with the specified color */
-    border-radius: 0px 15px 0px 15px; /* Rounded corners on the top-right and bottom-right */
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(./image/bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 100vh;
+}
+.navigation {
+  flex: 1;
+}
+.navigation nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 75px 225px 0px 225px;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  user-select: none;
+}
+
+.navigation nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  position: relative;
+}
+.navigation nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
+}
+
+.navigation nav a:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+.loginButton {
+  height: 43px;
+  width: 110px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background: none;
+  color: #fff;
+  transition: color 0.6s ease-in-out;
+}
+
+.loginButton:hover {
+  color: #000;
+}
+/* middle part */
+.mainMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+}
+.loginMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 500px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.corsBar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px; /* Adjusted width of the box */
+  height: 30px; /* Adjusted height of the box */
+  background: #2a3d55;
+  border: 2px solid #fff; /* Border with the specified color */
+  border-radius: 0px 15px 0px 15px; /* Rounded corners on the top-right and bottom-right */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .corsBar::before,
 .corsBar::after {
-    content: '';
-    position: absolute;
-    width: 20px; /* Adjusted width of the cross lines */
-    height: 2px; /* Thickness of the cross lines */
-    background-color: #fff; /* Color of the cross lines */
+  content: "";
+  position: absolute;
+  width: 20px; /* Adjusted width of the cross lines */
+  height: 2px; /* Thickness of the cross lines */
+  background-color: #fff; /* Color of the cross lines */
 }
 
 .corsBar::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .corsBar::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .loginMenu h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #000;
-  }
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #000;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .inputContainer {
-    position: relative;
-    margin-bottom: 40px; /* Consistent spacing as in your original */
-    border-bottom: 2px solid #fff;
+  position: relative;
+  margin-bottom: 40px; /* Consistent spacing as in your original */
+  border-bottom: 2px solid #fff;
 }
-
+.inputContainer label {
+  position: absolute;
+  top: -20px; /* Adjust based on desired positioning */
+  left: 10px;
+  font-size: 1rem;
+  color: #000;
+  pointer-events: none; /* Prevents label from blocking input */
+}
 .inputContainer input {
-    width: 100%;
-    padding: 10px 40px 10px 10px; /* Adjust padding for icon space */
-    background: none; /* Keep the input background transparent */
-    border: none;
-    outline: none;
-    color: #000;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adjust padding for icon space */
+  background: none; /* Keep the input background transparent */
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 16px;
 }
 
 .inputContainer input::placeholder {
-    color: #000; /* Keep placeholder color for readability */
+  color: #000; /* Keep placeholder color for readability */
 }
 
 .inputContainer i {
-    position: absolute;
-    right: 10px; /* Position icons inside the input fields */
-    top: 50%;
-    transform: translateY(-50%); /* Vertically center the icons */
-    font-size: 18px;
-    color: #000; /* Icon color */
+  position: absolute;
+  right: 10px; /* Position icons inside the input fields */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icons */
+  font-size: 18px;
+  color: #000; /* Icon color */
 }
 
 .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Aligns "Remember me" and link */
-    margin-bottom: 15px;
-    color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns "Remember me" and link */
+  margin-bottom: 15px;
+  color: #000;
 }
 
 .options label {
-    font-size: 14px;
+  font-size: 1.5rem;
 }
 
 .options a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
 }
 
 .options a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .loginButtonForm {
-    padding: 10px;
-    background: #786E79; /* Button background color */
-    color: #000; /* Button text color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    transition: background 0.3s ease; /* Smooth hover effect */
+  padding: 10px;
+  background: #786e79; /* Button background color */
+  color: #000; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease; /* Smooth hover effect */
 }
 
 .loginButtonForm:hover {
-    background: #5d545d; /* Slightly darker shade on hover */
+  background: #5d545d; /* Slightly darker shade on hover */
 }
+/* Mobile Styles */
+@media (max-width: 500px) {
+  .navigation nav {
+    margin: 10px 10px;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  
-  
-  
+  .navigation nav a {
+    font-size: 1rem;
+  }
+
+  .loginButton {
+    font-size: 1rem;
+    width: 100px;
+  }
+
+  .loginMenu {
+    top: -70px;
+    width: 70%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .inputContainer input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .loginMenu h1 {
+    font-size: 1.5rem;
+  }
+
+  .loginButtonForm {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .corsBar {
+    width: 25px;
+    height: 25px;
+  }
+
+  .corsBar::before,
+  .corsBar::after {
+    width: 15px;
+  }
+}

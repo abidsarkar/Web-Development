@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <nav class="navigation">
-      
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page | Abid | Figma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <nav>
         <div class="logo">
-            <img src="#" alt="" />logo
+          <img src="#" alt="" />logo
         </div>
         <a href="#">Home</a></li>
         <a href="#">Services</a></li>
         <a href="#">Contact</a></li>
         <a href="#">About</a></li>
-        <button class="loginButton">login</button></li>
-      
-    </nav>
-    <div class="loginMenu">
-      <div class="corsBar">
-      </div>
-      <h1>LOGIN</h1>
-      <form>
-        <div class="inputContainer">
-          <input type="email" placeholder="Enter your email" required />
-          <i class="fa-solid fa-envelope"></i>
-      </div>
-      <div class="inputContainer">
-          <input type="password" placeholder="Enter your password" required />
-          <i class="fa-solid fa-lock"></i>
-      </div>
-        <div class="options">
-          <label>
-            <input type="checkbox" /> Remember me
-          </label>
-          <a href="#" class="forgotPassword">Forgot password?</a>
-        </div>
-        <button type="submit" class="loginButtonForm">Login</button>
-      </form>
+        <button class="loginButton">login</button>
+      </nav>
     </div>
-  </body>
+    <div class="mainMenu">
+      <div class="loginMenu">
+        <div class="corsBar">
+        </div>
+        <h1>LOGIN</h1>
+        <form>
+          <div class="inputContainer">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required />
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="inputContainer">
+          <label for="password">password</label>
+            <input type="password" placeholder="Enter your password" required />
+            <i class="fa-solid fa-lock"></i>
+        </div>
+          <div class="options">
+            <label>
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#" class="forgotPassword">Forgot password?</a>
+          </div>
+          <button type="submit" class="loginButtonForm">Login</button>
+        </form>
+      </div>
+  </div>
+</body>
+
 </html>
