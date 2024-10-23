@@ -137,12 +137,16 @@ body {
   color: #000;
 }
 
+
 form {
   display: flex;
+  
+}
+form {
+  
   flex-direction: column;
   width: 100%;
 }
-
 .inputContainer {
   position: relative;
   margin-bottom: 40px; /* Consistent spacing as in your original */
