@@ -1,3 +1,5 @@
+// the file is taken form https://github.com/shradha-khapra/JavaScriptSeries/blob/main/CurrencyConverter/codes.js
+// use for educationl purpes onley
 const countryList = {
   AED: "AE",
   AFN: "AF",
