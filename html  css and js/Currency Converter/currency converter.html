@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter | ABID</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main>
+
+        <h1>Currency Converter</h1>
+        <form action="">
+            <label for="amount">Enter Amount</label>
+            <input type="text" placeholder="100" name="amount">
+            <div class="selectionDiv">
+                <div class="selectForm">
+                    <label for="Form">Form</label>
+                    <img src="https://flagsapi.com/BD/flat/64.png" alt="flag">
+                    <select name="Form">
+                        <option value="BD" selected>BDT</option>
+                        <option value="AE">AED</option>
+                    </select>
+                </div>
+                <div class="selectTo">
+                    <label for="To">To</label>
+                    <img src="https://flagsapi.com/AE/flat/64.png" alt="flag">
+                    <select name="To">
+                        <option value="BD">BDT</option>
+                        <option value="AE" selected>AED</option>
+                    </select>
+                </div>
+            </div>
+            <p class="info">1BDT = 110usd</p>
+            <button>Get Exchange Rate</button>
+        </form>
+    </main>
+
     <script src="codes.js"></script>
     <script src="currencyConverter.js"></script>
 </body>
+
 </html>
