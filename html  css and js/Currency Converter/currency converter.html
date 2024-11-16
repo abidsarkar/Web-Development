@@ -6,35 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter | ABID</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <main>
+    <main class="Container">
 
         <h1>Currency Converter</h1>
-        <form action="">
+        <form action="" class="ConverterForm">
             <label for="amount">Enter Amount</label>
-            <input type="text" placeholder="100" name="amount">
+            <input type="number" placeholder="100" name="amount" required>
             <div class="selectionDiv">
                 <div class="selectForm">
                     <label for="Form">Form</label>
-                    <img src="https://flagsapi.com/BD/flat/64.png" alt="flag">
-                    <select name="Form">
-                        <option value="BD" selected>BDT</option>
-                        <option value="AE">AED</option>
-                    </select>
+                    <div class="selectFormBorder">
+                        <img src="https://flagsapi.com/BD/flat/64.png" alt="flag">
+                        <select name="Form">
+                            <option value="BD" selected>BDT</option>
+                            <option value="AE">AED</option>
+                        </select>
+                    </div>
+
                 </div>
+                <i class="fa-solid fa-right-left"></i>
                 <div class="selectTo">
                     <label for="To">To</label>
-                    <img src="https://flagsapi.com/AE/flat/64.png" alt="flag">
-                    <select name="To">
-                        <option value="BD">BDT</option>
-                        <option value="AE" selected>AED</option>
-                    </select>
+                    <div class="selectFormBorder">
+                        <img src="https://flagsapi.com/AE/flat/64.png" alt="flag">
+                        <select name="To">
+                            <option value="BD">BDT</option>
+                            <option value="AE" selected>AED</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <p class="info">1BDT = 110usd</p>
-            <button>Get Exchange Rate</button>
+            <p class="message">1BDT = 110usd</p>
+            <button class="btn">Get Exchange Rate</button>
         </form>
     </main>
 
