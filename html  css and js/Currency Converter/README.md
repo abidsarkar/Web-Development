@@ -11,8 +11,8 @@ Features ✨
 
 Screenshots 🖼️
 Feature	Screenshot
-Home Screen	
-Currency Swap	
+Home Screen	![alt text](image.png)
+Currency Swap	![alt text](image-1.png)
 Error Message	
 
 (Add your screenshots in a screenshots/ folder for better visualization)
