@@ -118,4 +118,18 @@ input[type="number"] {
     cursor: pointer;
     
 }
-/* make the design responsive *
+ /* make the design responsive */
+ @media (max-width:600px){
+  .Container{
+    background-color: #f4e4ba;
+
+  }
+  .selectFormBorder{
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+  .ConverterForm input{
+    background-color: #fff;
+  }
+
+ }
