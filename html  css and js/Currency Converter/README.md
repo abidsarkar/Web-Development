@@ -41,7 +41,6 @@ How to Use 🔧
         Use the swap button to toggle currencies.
 
 File Structure 📁
-
 currency-converter/
 ├── index.html            # Main HTML file
 ├── style.css             # Stylesheet for design
@@ -49,6 +48,7 @@ currency-converter/
 ├── CurrencyFreeAPI.js    # API interaction script
 ├── screenshots/          # Folder for screenshots (add your images here)
 ├── README.md             # Project documentation
+
 
 Future Enhancements 🚀
 
