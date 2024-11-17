@@ -29,14 +29,48 @@ const updateFlag = (element) => {
 };
 
 async function currencyConverter(fromCurrencyCode, toCurrencyCode, amount) {
-  let sendUrl = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrencyCode}.json`;
-    let response = await fetch(sendUrl);
+    message.innerText = "Fetching conversion rates...";
+
+    let sendUrl = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrencyCode}.json`;
+  try {
+  let response = await fetch(sendUrl);
+  if (!response.ok) {
+    throw new Error(`Error fetching data: ${response.statusText}`);
+  }
   let data = await response.json();
   let rates = data[fromCurrencyCode][toCurrencyCode];
+  if (!rates) {
+    throw new Error(`Conversion rate not available for ${fromCurrencyCode} to ${toCurrencyCode}`);
+  }
   rates = rates.toFixed(2);
   message.innerText = `${amount} ${fromCurrencyCode}= ${rates*amount} ${toCurrencyCode}`;
-  
+  } catch (error) {
+    message.innerText = `Error: ${error.message}`;
+    console.error(error);
+  }
 }
+//toggle
+document.querySelector(".fa-right-left").addEventListener("click", () => {
+    // Add animation classes to the dropdowns
+    frmCurr.classList.add("toggle-animation");
+    toCurr.classList.add("toggle-animation");
+  
+    // Swap the currency values
+    const temp = frmCurr.value;
+    frmCurr.value = toCurr.value;
+    toCurr.value = temp;
+  
+    // Update flags
+    updateFlag(frmCurr);
+    updateFlag(toCurr);
+  
+    // Remove the animation class after the animation is complete
+    setTimeout(() => {
+      frmCurr.classList.remove("toggle-animation");
+      toCurr.classList.remove("toggle-animation");
+    }, 500); // Match the animation duration
+  });
+  
 //button
 btn.addEventListener("click", (evt) => {
   evt.preventDefault();
