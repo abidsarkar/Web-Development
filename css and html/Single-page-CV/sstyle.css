@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 .main {
@@ -19,7 +19,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   /* margin-bottom: 20px; */
@@ -46,6 +46,7 @@
 .address {
   font-size: 0.8rem;
   color: #000;
+  font-weight: 400;
   padding: 5px;
   text-align: start;
 }
@@ -72,11 +73,15 @@
   /* font-weight: 800; */
   text-align: center;
 }
-
+.email {
+    font-size: 0.8rem;
+    color: #000;
+    text-align: center;
+}
 .header3{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: end;
     /* border: 1px solid brown; */
 }
@@ -86,12 +91,7 @@
     color: #000;
     text-decoration: none;
 }
-.email a{
-    font-size: 0.8rem;
-    color: #000;
-    text-decoration: none;
-    overflow:visible;
-}
+
 /* section color change and padding margin on the bottom and top */
 .section{
     display: block;
@@ -124,19 +124,148 @@
     flex-wrap: wrap;
 }
 .big{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     display: flex;
     flex: 2;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
+.educationRow1Col1 i,
+.educationRow1Col1 p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+}
+.educationRow2Col1{
+    font-size: 1rem;
+    color: #000;
+}
 .small{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
 
+}
+.educationRow1Col2{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+}
+.educationRow2Col2{
+    font-size: 1rem;
+    color: #000;
+    font-weight:400;
+}
+.educationRow2Col1 p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+}
+/* relevant course continer cs */
+
+.edContainer2{
+    /* border: 1px solid brown; */
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.RelevantCsCourse{
+    margin-bottom: 5px;
+}
+.RelevantCsCourse p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+    margin-bottom: 0px;
+}
+.RelevantCsCourse ul {
+    /* border: 1px solid brown; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0px; 
+    list-style-position: inside;
+    /* list-style-type:circle; */
+    padding: 0px;
+    margin-left: 20px; 
+    
+}
+
+.RelevantCsCourse li {
+    /* background-color: #f5f5f5;  */
+    /* padding: 8px;  */
+    /* border-radius: 4px;  */
+    gap: 5px;
+    text-align: start; 
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   */
+}
+/* non cs course  */
+
+.RelevantNonCsCourse p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+    margin-bottom: 0px;
+}
+.RelevantNonCsCourse ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0px; 
+    list-style-position: inside;
+    /* list-style-type:circle; */
+    padding: 0px; 
+    margin-left: 20px; 
+    
+}
+
+.RelevantNonCsCourse li {
+    /* background-color: #f5f5f5;  */
+    /* padding: 8px;   */
+    /* border-radius: 4px; */
+    gap: 5px;
+    text-align: start; 
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+/* technical skills */
+.language,
+.developmentTools,
+.other,
+.Software{
+    margin-bottom: 5px;
+}
+.language p,
+.developmentTools p,
+.other p,
+.Software p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+    margin-bottom: 0px;
+}
+.language ul,
+.developmentTools ul,
+.other ul,
+.Software ul{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0px; 
+    list-style-position: inside;
+    padding: 0px;
+    margin-left: 20px; 
+    
+    
+}
+
+.language li,
+.developmentTools li,
+.other li ,
+.Software li{
+    /* border: 1px solid brown; */
+    gap: 5px;
+    text-align: start; 
 }
