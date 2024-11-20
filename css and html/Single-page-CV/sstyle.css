@@ -11,6 +11,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  /* border: 1px solid brown; */
   height: 100vh;
   width: 100%;
   padding: 20px;
@@ -268,4 +269,47 @@
     /* border: 1px solid brown; */
     gap: 5px;
     text-align: start; 
+}
+/* project */
+
+.project{
+    margin-bottom: 5px;
+}
+
+.project p{
+    font-size: 1rem;
+    color: #000;
+    font-weight:600;
+    margin-bottom: 0px;
+}
+.project ul
+{
+
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 0px; 
+    list-style-position: inside;
+    padding: 0px;
+    margin-left: 20px; 
+    
+    
+}
+.project li
+{
+    /* border: 1px solid brown; */
+    gap: 5px;
+    text-align: start; 
+}
+/* honer and award  */
+.honerAndAward{
+    margin-bottom: 5px;
+}
+
+.honerAndAward ul{
+    display: grid;
+    grid-template-columns: repeat(auto ,1fr);
+    gap: 0px; 
+    list-style-position: inside;
+    padding: 0px;
+    margin-left: 20px; 
 }
