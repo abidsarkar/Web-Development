@@ -12,7 +12,27 @@
   letter-spacing: 0.5px;
   
 }
-
+.print-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+  }
+  
+  .print-button button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .print-button button:hover {
+    background-color: #0056b3;
+  }
+  
 .main {
   display: flex;
   flex-direction: column;
@@ -404,5 +424,217 @@
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
   }
+ /* General print styles */
+@media print {
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      color: #000;
+      line-height: 1.5;
+    }
   
+    .main {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: none;
+    }
+  
+    /* Hide elements not required for print */
+    .print-button {
+      display: none;
+    }
+  
+    /* Make links appear neatly */
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  
+    a:after {
+      content: " (" attr(href) ")";
+      font-size: 10px;
+      color: #666;
+    }
+  
+    /* Ensure sections are clearly divided */
+    .section {
+      background-color: transparent;
+      padding: 5px 0;
+      margin-top: 20px;
+      border: none;
+    }
+  
+    .section p {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    /* Adjust header layout */
+    .header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .header .name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    .header .address,
+    .header .phone,
+    .header .link,
+    .header .email {
+      font-size: 12px;
+      color: #000;
+    }
+  
+    /* Make sections more readable */
+    .education,
+    .technicalSkills,
+    .project,
+    .honerAndAward {
+      page-break-inside: avoid;
+      margin-bottom: 15px;
+    }
+  
+    ul {
+      margin-left: 20px;
+      padding-left: 0;
+      list-style: none;
+    }
+  
+    li {
+      margin-bottom: 5px;
+    }
+  
+    /* Ensure tables or grids align properly */
+    .educationRow1Col1,
+    .educationRow1Col2,
+    .technicalSkills ul,
+    .project ul {
+      display: block;
+      width: 100%;
+    }
+  }
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #000;
+      width: 210mm; /* A4 width */
+      height: 297mm; /* A4 height */
+    }
+  
+    .main {
+      width: 190mm; /* Slightly less than A4 width to ensure no clipping */
+      margin: 10mm auto; /* Center the content with equal margins */
+      padding: 20px;
+      background-color: #fff;
+      border: none;
+    }
+  
+    /* Hide unnecessary elements */
+    .print-button,
+    .fa-linkedin,
+    .fa-github,
+    .fa-envelope {
+      display: none !important;
+    }
+  
+    /* Links will appear as text without the href */
+    a:after {
+      content: "";
+    }
+  
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  
+    /* Header section styling for print */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .header .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    .header .address,
+    .header .phone {
+      font-size: 12px;
+      font-weight: normal;
+    }
+  
+    /* Section headings */
+    .section p {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 10px 0;
+      text-transform: uppercase;
+      text-align: left;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+    }
+  
+    /* Ensure content fits within the page and avoids breaking sections */
+    .education,
+    .technicalSkills,
+    .project,
+    .honerAndAward {
+      margin-bottom: 15px;
+      page-break-inside: avoid; /* Prevent page breaks inside these sections */
+    }
+  
+    ul {
+      margin-left: 20px;
+      padding-left: 0;
+      list-style: none;
+    }
+  
+    li {
+      margin-bottom: 5px;
+    }
+  
+    /* Adjust column layouts for print */
+    .edContainer1 {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Adjust column ratios for print */
+      gap: 10px;
+    }
+  
+    .big,
+    .small {
+      text-align: left;
+    }
+  
+    /* Remove any extra styles */
+    .educationRow1Col1,
+    .educationRow1Col2,
+    .technicalSkills ul,
+    .project ul {
+      display: block;
+      width: 100%;
+    }
+  
+    /* Ensure a clean layout for footer sections */
+    .honerAndAward ul {
+      padding: 0;
+      margin-left: 0;
+      list-style-type: none;
+    }
+  }
   
