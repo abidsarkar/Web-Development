@@ -90,9 +90,7 @@
   color: #ce0808;
 }
 /* loader */
-.logo{
-  display: none;
-}
+
 .loader {
   width: 48px;
   height: 48px;

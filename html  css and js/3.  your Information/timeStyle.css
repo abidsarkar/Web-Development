@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+
+.container2 {
+  height: auto;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container_box {
+  position: relative;
+  height: auto;
+  width: 300px;
+ 
+}
+
+.hours,
+  .minutes,
+  .seconds,
+  .h2412,
+  .isMorning {
+    color: #000;
+  }
+.container_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  gap: 25px;
+}
+.container_box .dot {
+  color: #FFF;
+}
+.isMorning {
+  display: block;
+}
+/* am pm button */
+.h2412 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  z-index: 100;
+}
+.h24,
+.h12 {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.h24.active,
+.h12.active {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.am:hover,
+.pm:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+@media (max-width: 500px) {
+ 
+  .square,.circle{
+    transform: scale(0.7);
+  }
+  .container2 {
+    /* ... other styles ... */
+    height: auto;
+    width: 300px;
+    flex-direction: column; /* Stack time elements vertically */
+    align-items: center;
+  }
+
+  .hours,
+  .minutes,
+  .seconds,
+  .h2412,
+  .isMorning {
+    color: #000;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .dot {
+    font-size: 1.5rem;
+  }
+}

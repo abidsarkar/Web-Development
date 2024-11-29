@@ -29,16 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
 // loader
 const logo = document.querySelector('.logo');
 const loader = document.querySelector('.loader');
+const time = document.querySelector('.time');
 window.onload = function() {
     // Initially set display to 'none'
     logo.style.display = 'none';
     ip.style.display = 'none';
+    time.style.display = 'none';
     loader.style.display = 'block';
   
     // After 1.5 seconds, set display to 'flex'
     setTimeout(() => {
         logo.style.display = 'block';
         ip.style.display = 'flex';
+        time.style.display = 'flex';
         loader.style.display = 'none';
       
     }, 1500);
