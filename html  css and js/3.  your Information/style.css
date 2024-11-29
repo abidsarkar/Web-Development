@@ -6,9 +6,13 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 /* reusable selector */
-.adoptedHight{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.plr{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ptb{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .flexCenter {
   display: flex;
@@ -25,7 +29,12 @@
   align-items: flex-start;
   justify-content: center;
   gap: 5px;
-  
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 .box {
   /* From https://css.glass */
@@ -36,10 +45,11 @@
   -webkit-backdrop-filter: blur(5px);
   border: 2px dashed rgba(255, 255, 255, 255);
 }
-/* header */
+/* main container */
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 10px;
   height: 100vh;
@@ -51,6 +61,8 @@
     rgba(148, 187, 233, 1) 100%
   );
 }
+/* header */
+
 .header {
   margin-top: 20px;
   height: 130px;
@@ -66,8 +78,14 @@
 }
 /* ip information */
 .ip {
-    padding-left: 10px;
+  font-size: 1rem;
+  height: auto;
+  width: 300px;
 }
-.ip .image{
-    height: 45px;
+.ip .ipCountryImage {
+  height: 45px;
+  display: block;
+}
+.ip div p{
+  color: #ce0808;
 }
