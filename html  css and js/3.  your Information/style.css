@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* reusable selector */
+.adoptedHight{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.flexStart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  
+}
+.box {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px dashed rgba(255, 255, 255, 255);
+}
+/* header */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.header {
+  margin-top: 20px;
+  height: 130px;
+  width: 300px;
+}
+.header i {
+  color: rgb(53, 139, 43);
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+.header p {
+  font-size: 1rem;
+}
+/* ip information */
+.ip {
+    padding-left: 10px;
+}
+.ip .image{
+    height: 45px;
+}
