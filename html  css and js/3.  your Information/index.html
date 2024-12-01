@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="timeStyle.css">
     <link rel="stylesheet" href="displayBlock.css">
-    
+
 </head>
 
 <body>
     <div class="hero">
-        <div class="header flexCenter box">
+        <div class="header container flexCenter flexNoWarp box ptb">
             <i class="ri-donut-chart-fill logo"></i>
-            <span class="loader display"></span>
+            <span class="loader display ptb"></span>
             <p>Your Information In Internet</p>
         </div>
         <!-- header -->
-        <div class="ip flexStart box ptb plr">
+        <div class="ip flexStart container box ptb ">
             <div class="flexRow">IPv4:
                 <p class="ipv4"></p>
             </div>
-            <div class="flexRow">Country:
-                <p class="ipCountry"></p>
+            <div class="flexRow flexCenter">Country:
+                <p class="ipCountry "></p>
                 <img class="ipCountryImage" src="">
             </div>
             <div class="flexRow">Region:
@@ -41,35 +41,36 @@
 
         </div>
         <!-- ip -->
-        <div class="locationMap ">
-            1
+        <div class="locationMap container box flexCenter ptb">
+            <img src="img/map.png" alt="map">
         </div>
         <!-- location map -->
-        <div class="time  box">
-            <div class="container2 ptb plr ">
-                <div class="container_box">
-                    <div class="hours">
-                        <p>00</p>
-                    </div>
-                    <div class="dot">:</div>
-                    <div class="minutes">
-                        <p>00</p>
-                    </div>
-                    <div class="dot">:</div>
-                    <div class="seconds">
-                        <p>00</p>
-                    </div>
-                    <div class="isMorning">
-                        <p>AM</p>
-                    </div>
+        <div class="time container flexCenter ptb plr box">
+            <div class="flexCenter flexRow ptb plr">
+                <!-- for time -->
+                <div class="hours">
+                    <p>00</p>
                 </div>
-                <div class="h2412">
-                    <button class="h24">24</button>
-                    <button class="h12 active">12</button>
+                <div class="dot">:</div>
+                <div class="minutes">
+                    <p>00</p>
                 </div>
-                
+                <div class="dot">:</div>
+                <div class="seconds">
+                    <p>00</p>
+                </div>
+                <div class="isMorning">
+                    <p>AM</p>
+                </div>
             </div>
+            <div class="h2412 flexRow">
+                <!-- for button -->
+                <button class="h24">24</button>
+                <button class="h12 active">12</button>
+            </div>
+
         </div>
+
         <!-- time show -->
         <div class="weather container"></div>
     </div>

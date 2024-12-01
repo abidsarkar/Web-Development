@@ -1,6 +1,6 @@
 
 //ip information
-const ip = document.querySelector('.ip');
+
 const ipv4 = document.querySelector('.ipv4');
 const ipCountry = document.querySelector('.ipCountry');
 const ipRegion = document.querySelector('.ipRegion');
@@ -28,13 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 // loader
 const logo = document.querySelector('.logo');
+const ip = document.querySelector('.ip');
 const loader = document.querySelector('.loader');
+const locationMap = document.querySelector('.locationMap');
 const time = document.querySelector('.time');
 window.onload = function() {
     // Initially set display to 'none'
     logo.style.display = 'none';
     ip.style.display = 'none';
     time.style.display = 'none';
+    locationMap.style.display = 'none';
     loader.style.display = 'block';
   
     // After 1.5 seconds, set display to 'flex'
@@ -42,6 +45,7 @@ window.onload = function() {
         logo.style.display = 'block';
         ip.style.display = 'flex';
         time.style.display = 'flex';
+        locationMap.style.display = 'flex';
         loader.style.display = 'none';
       
     }, 1500);

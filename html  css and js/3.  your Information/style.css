@@ -5,6 +5,11 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+:root {
+  --fontMobileSmall: 1.5rem;
+  --fontMobileMedium: 2rem;
+  --fontMobileBig: 3rem;
+}
 /* reusable selector */
 .plr{
   padding-left: 10px;
@@ -14,26 +19,32 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.flexWarp{
+  flex-wrap: wrap;
+}
+.flexNoWarp{
+  flex-wrap: nowrap;
+}
 .flexCenter {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 }
 .flexStart {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 5px;
 }
 .flexRow{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 5px;
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 .box {
@@ -45,6 +56,10 @@
   -webkit-backdrop-filter: blur(5px);
   border: 2px dashed rgba(255, 255, 255, 255);
 }
+.container{
+  width: 300px;
+  padding: 10px;
+}
 /* main container */
 .hero {
   display: flex;
@@ -52,7 +67,7 @@
   align-items: center;
   gap: 20px;
   padding: 10px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: rgb(238, 174, 202);
   background: linear-gradient(
@@ -65,29 +80,35 @@
 
 .header {
   margin-top: 20px;
-  height: 130px;
-  width: 300px;
+  margin-bottom: 20px;
+  height: 150px;
 }
 .header i {
   color: rgb(53, 139, 43);
-  font-size: 3rem;
+  font-size: var(--fontMobileBig);
   margin-bottom: 5px;
 }
 .header p {
-  font-size: 1rem;
+  font-size: var(--fontMobileSmall);
+  text-align: center;
 }
 /* ip information */
-.ip {
-  font-size: 1rem;
-  height: auto;
-  width: 300px;
+.ip{
+  font-size: var(--fontMobileSmall);
+}
+.ip p{
+  font-size: var(--fontMobileSmall);
+}
+.ip div p{
+  color: #ce0808;
 }
 .ip .ipCountryImage {
   height: 45px;
   display: block;
 }
-.ip div p{
-  color: #ce0808;
+/* map location */
+.locationMap img{
+  height: 150px;
 }
 /* loader */
 
@@ -125,3 +146,4 @@
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
+/* responsive */

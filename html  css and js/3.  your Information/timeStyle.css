@@ -5,21 +5,12 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
-
-
-.container2 {
-  height: auto;
-  width: 300px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+:root {
+  --fontMobileSmall: 1.5rem;
+  --fontMobileMedium: 2rem;
+  --fontMobileBig: 3rem;
 }
-.container_box {
-  position: relative;
-  height: auto;
-  width: 300px;
- 
-}
+
 
 .hours,
   .minutes,
@@ -28,18 +19,17 @@
   .isMorning {
     color: #000;
   }
-.container_box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #fff;
-  gap: 25px;
-}
-.container_box .dot {
-  color: #FFF;
+.hours,
+  .minutes,
+  .seconds,
+  .h2412,
+  .isMorning {
+    font-size: var(--fontMobileBig);
+  }
+
+.time div .dot {
+  font-size: var(--fontMobileMedium);
+  color: #ec0606;
 }
 .isMorning {
   display: block;
@@ -54,6 +44,7 @@
 }
 .h24,
 .h12 {
+  font-size: var(--fontMobileSmall);
   background-color: transparent;
   border: 2px solid #000;
   padding: 10px 20px;
@@ -76,29 +67,4 @@
 }
 
 
-@media (max-width: 500px) {
- 
-  .square,.circle{
-    transform: scale(0.7);
-  }
-  .container2 {
-    /* ... other styles ... */
-    height: auto;
-    width: 300px;
-    flex-direction: column; /* Stack time elements vertically */
-    align-items: center;
-  }
 
-  .hours,
-  .minutes,
-  .seconds,
-  .h2412,
-  .isMorning {
-    color: #000;
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .dot {
-    font-size: 1.5rem;
-  }
-}
