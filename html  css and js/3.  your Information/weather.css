@@ -1,0 +1,42 @@
+:root {
+    --fontMobileSmall: 1.5rem;
+    --fontMobileMedium: 2rem;
+    --fontMobileBig: 3rem;
+  }
+.weather{
+    display: flex;
+}  
+.weather .weatherIcon{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70px;
+}
+.weather h1{
+    font-size: var(--fontMobileBig);
+    font-weight: 500;
+}
+.weather h2{
+    font-size: var(--fontMobileMedium);
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity,
+.wind{
+    font-size: var(--fontMobileSmall);
+}

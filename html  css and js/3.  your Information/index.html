@@ -9,6 +9,7 @@
     <title>Your Information | Abid</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="timeStyle.css">
+    <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" href="displayBlock.css">
 
 </head>
@@ -72,9 +73,30 @@
         </div>
 
         <!-- time show -->
-        <div class="weather container"></div>
+        <div class="weather box flexCol">
+            <img src="img/rain.png" alt="rain" class="weatherIcon ptb plr box">
+            <h1 class="temp flexCenter">22ºc</h1>
+            <h2 class="city flexCenter">Dhaka</h2>
+            <div class="details flexRow flexNoWarp ptb">
+                <div class="col">
+                    <img src="img/humidity.png" alt="humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/wind.png" alt="wind">
+                    <div>
+                        <p class="wind">15Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="time.js"></script>
+    <script src="weather.js"></script>
     <script src="script.js"></script>
 </body>
 
