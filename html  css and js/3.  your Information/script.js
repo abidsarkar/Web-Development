@@ -9,8 +9,8 @@ let ipUrl = "https://ipinfo.io?token=";
 let geoLoc;
 let geoLatitude;
 let geoLongitude;
-let ipToken = "a6c4c7f1dc32fe";
-// let ipToken = "your_api_key";
+
+let ipToken = "your_api_key";
 
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch the IP address from the API
