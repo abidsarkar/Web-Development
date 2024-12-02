@@ -147,3 +147,20 @@
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
 /* responsive */
+@media screen and (min-width: 800px ){
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+  }
+  .header {
+    grid-column: 1/4; /* Span only one column */
+    grid-row: 1;
+    /* justify-self: center; */
+  }
+  .weather {
+    grid-column: 2;
+  }
+  
+}
