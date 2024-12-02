@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         console.error("City not found in IP data.");
       }
-      // call map to show map
+     // call map to show map
       geoLoc = data.loc;
       // console.log(geoLoc);
       if (geoLoc) {
