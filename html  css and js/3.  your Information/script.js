@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ipCity.textContent = data.city;
       ipTimeZone.textContent = data.timezone;
       ipCountryImage.src = `https://flagsapi.com/${ipCountry.textContent}/flat/64.png`;
+      
+      // Call the weather function after IP city is set
+      if (data.city) {
+        checkWeather(data.city);
+      } else {
+        console.error("City not found in IP data.");
+      }
       // call map to show map
       geoLoc = data.loc;
       // console.log(geoLoc);
@@ -33,11 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // console.log("Longitude:", geoLongitude);
        getMap(geoLatitude, geoLongitude); // Call the getMap function
       }
-      // Call the weather function after IP city is set
-      if (data.city) {
-        checkWeather(data.city);
-      } else {
-        console.error("City not found in IP data.");
+      else {
+        console.error("geo location not found!");
       }
     })
     .catch((error) => {

@@ -1,4 +1,5 @@
-const WeatherApiKey = "Your_API_KEY";//get your free api key from openWeatherMap
+//const WeatherApiKey = "Your_API_KEY";//get your free api key from openWeatherMap
+const WeatherApiKey = "c4ebcf4f66a3de87d3e6075b88c0f76c";//get your free api key from openWeatherMap
 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 let searchBtn = document.querySelector(".h24");
