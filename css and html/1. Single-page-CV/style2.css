@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+/* Root */
+:root {
+  --color_blue: #318ce7;
+  --color_white: #ffffff;
+  --color_black: #000000;
+
+  --section_Background_Color: #a6aebfa0;
+
+  --font-mobile: 0.7rem;
+  --font-mobile_big: 1rem;
+}
+/* selector */
+.flexItem {
+  display: flex;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexWarp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexNoWarp {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.gapSmall{
+    gap: 2px;
+}
+.ptb {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.plr {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.block {
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+/* reuseable selection bar */
+.section {
+  display: block;
+  /* border: 1px solid brown; */
+  padding: 2px;
+  background-color: var(--section_Background_Color);
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-top: 20px;
+  border-left: 4px solid var(--color_black);
+}
+.section p {
+  color: var(--color_black);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+/* ..........
+*   1.Print Button
+*   2.Header
+*   3.Skills
+*   4.Education
+*   5.Project
+*   6.Achievement
+*   7.Experience
+*   8.Certificate
+.............*/
+
+/* ..........
+*   1.Print Button
+.............*/
+
+.print-button {
+  justify-content: flex-end;
+  /* border-bottom: 1px solid var(--color_black); */
+  margin: 20px 20px 30px 0;
+}
+.print-button button {
+  padding: 7px 7px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: var(--color_black);
+  background-color: var(--color_blue);
+  font-size: var(--font-mobile);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* ..........
+*   2.Header
+    a.name
+.............*/
+.main {
+  width: 100%;
+}
+.header {
+  flex: 1;
+}
+.header .header1 {
+  text-align: center;
+}
+.header .header1 h1{
+  font-size: 1.2rem;
+}
+/* ..........
+*   2.Header
+    b.info
+.............*/
+.header2 {
+    gap: 10px;
+    font-size: var(--font-mobile);
+}
+.header2 a{
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+.header2 a:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media screen and (min-width:1010px){
+    .main{
+        width: 830px;
+        height: 1170px;
+        background-color: rgb(228, 231, 231);
+    }
+}
