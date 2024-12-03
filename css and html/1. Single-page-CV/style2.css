@@ -42,6 +42,11 @@
   display: flex;
   flex-wrap: nowrap;
 }
+.flexBaseLine{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
 .gapSmall{
     gap: 2px;
 }
@@ -84,6 +89,8 @@
 /* ..........
 *   1.Print Button
 *   2.Header
+        a.name
+        b.info
 *   3.Skills
 *   4.Education
 *   5.Project
@@ -142,8 +149,26 @@
 .header2 a:hover {
     text-decoration: underline;
 }
+/* ..........
+*   2.Skills
+    a.language
+.............*/
+.skills{
+    list-style-position:inside;
+    
+}
+.skills .language p{
+    font-size: var(--font-mobile_big);
+    margin-right: 5px;
+}
+.skills .language ul li {
+    padding-left: 15px;
+    font-size: var(--font-mobile);
+}
+
 
 /* responsive */
+/* a4 = 8.3*11.7 in size*/
 @media screen and (min-width:1010px){
     .main{
         width: 830px;
