@@ -14,8 +14,8 @@
 
   --section_Background_Color: #a6aebfa0;
 
-  --font-mobile: 0.7rem;
-  --font-mobile_big: 1rem;
+  --font-small: 0.7rem;
+  --font-big: 1rem;
 }
 /* selector */
 .flexItem {
@@ -92,6 +92,16 @@
   font-weight: 700;
   margin-left: 10px;
 }
+/* link style */
+.linkStyleNone{
+  color: var(--color_black);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.linkStyleNone:hover{
+  color: blue;
+  text-decoration: underline;
+}
 /* ..........
 *   1.Print Button
 *   2.Header
@@ -128,7 +138,7 @@
   cursor: pointer;
   color: var(--color_black);
   background-color: var(--color_blue);
-  font-size: var(--font-mobile);
+  font-size: var(--font-small);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ..........
@@ -153,7 +163,7 @@
 .............*/
 .header2 {
     gap: 10px;
-    font-size: var(--font-mobile);
+    font-size: var(--font-small);
 }
 .header2 a{
     text-decoration: none;
@@ -175,12 +185,12 @@
 .............*/
 
 .skills .language p{
-    font-size: var(--font-mobile_big);
+    font-size: var(--font-big);
     margin-right: 5px;
 }
 .skills .language ul li {
     padding-left: 15px;
-    font-size: var(--font-mobile);
+    font-size: var(--font-big);
 }
 /* ..........
 *   2.Skills
@@ -188,12 +198,12 @@
 .............*/
 
 .skills .database p{
-    font-size: var(--font-mobile_big);
+    font-size: var(--font-big);
     margin-right: 5px;
 }
 .skills .database ul li {
     padding-left: 15px;
-    font-size: var(--font-mobile);
+    font-size: var(--font-big);
 }
 /* ..........
 *   2.Skills
@@ -201,12 +211,12 @@
 .............*/
 
 .skills .frameworksAndLibraries p{
-    font-size: var(--font-mobile_big);
+    font-size: var(--font-big);
     margin-right: 5px;
 }
 .skills .frameworksAndLibraries ul li {
     padding-left: 15px;
-    font-size: var(--font-mobile);
+    font-size: var(--font-big);
 }
 /* ..........
 *   2.Skills
@@ -214,12 +224,12 @@
 .............*/
 
 .skills .developmentTools p{
-    font-size: var(--font-mobile_big);
+    font-size: var(--font-big);
     margin-right: 5px;
 }
 .skills .developmentTools ul li {
     padding-left: 15px;
-    font-size: var(--font-mobile);
+    font-size: var(--font-big);
 }
 
 /* ..........
@@ -229,12 +239,12 @@
 
 
 .skills .other p{
-  font-size: var(--font-mobile_big);
+  font-size: var(--font-big);
   margin-right: 5px;
 }
 .skills .other ul li {
   padding-left: 15px;
-  font-size: var(--font-mobile);
+  font-size: var(--font-big);
 }
 /* ..........
 *   3.Education
@@ -254,6 +264,31 @@
 .............*/
 
 
+/* ..........
+*   4.Project
+.............*/
+.project .projectDetails ul{
+  list-style-position: inside;
+}
+/* ..........
+*   5.Achievement
+.............*/
+.honerAndAward ul{
+  list-style-position: inside;
+
+}
+/* ..........
+*  6.Experience
+.............*/
+.Experience ul{
+  list-style-position: inside;
+}
+/* ..........
+*  6.Certificate
+.............*/
+.Experience ul{
+  list-style-position: inside;
+}
 /* responsive */
 /* a4 = 8.3*11.7 in size*/
 @media screen and (min-width:1010px){
