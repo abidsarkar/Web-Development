@@ -26,6 +26,12 @@
     justify-content: center;
     align-items: center;
 }
+.flexEnd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+}
 .flexCol {
   display: flex;
   flex-direction: column;
@@ -89,10 +95,17 @@
 /* ..........
 *   1.Print Button
 *   2.Header
-        a.name
-        b.info
+      a.name
+      b.info
 *   3.Skills
+      a.Programming language
+      b.Database
+      c.Frameworks & Libraries
+      d.Development Tools & Platforms
+      e.other skills
 *   4.Education
+      a.University
+      b.Relevant Course
 *   5.Project
 *   6.Achievement
 *   7.Experience
@@ -214,22 +227,40 @@
     e.other skills
 .............*/
 
+
 .skills .other p{
-    font-size: var(--font-mobile_big);
-    margin-right: 5px;
+  font-size: var(--font-mobile_big);
+  margin-right: 5px;
 }
 .skills .other ul li {
-    padding-left: 15px;
-    font-size: var(--font-mobile);
+  padding-left: 15px;
+  font-size: var(--font-mobile);
 }
+/* ..........
+*   3.Education
+.............*/
+
+.end {
+  margin-left: auto; /* Aligns to the right */
+}
+/* ..........
+*   3.Education
+    a.University
+.............*/
+
+/* ..........
+*   3.Education
+    b.Relevant Course
+.............*/
 
 
 /* responsive */
 /* a4 = 8.3*11.7 in size*/
 @media screen and (min-width:1010px){
     .main{
+        padding: 20px;
         width: 830px;
         height: 1170px;
-        background-color: rgb(228, 231, 231);
+        background-color: rgb(48, 202, 202);
     }
 }
