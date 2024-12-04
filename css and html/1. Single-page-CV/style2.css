@@ -15,7 +15,8 @@
   --section_Background_Color: #a6aebfa0;
 
   --font-small: 0.7rem;
-  --font-big: 1rem;
+  --font-medium: 1rem;
+  --font-big: 2rem;
 }
 /* selector */
 .flexItem {
@@ -155,7 +156,7 @@
   text-align: center;
 }
 .header .header1 h1{
-  font-size: 1.2rem;
+  font-size: var(--font-big);
 }
 /* ..........
 *   2.Header
@@ -185,12 +186,12 @@
 .............*/
 
 .skills .language p{
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
     margin-right: 5px;
 }
 .skills .language ul li {
     padding-left: 15px;
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
 }
 /* ..........
 *   2.Skills
@@ -198,12 +199,12 @@
 .............*/
 
 .skills .database p{
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
     margin-right: 5px;
 }
 .skills .database ul li {
     padding-left: 15px;
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
 }
 /* ..........
 *   2.Skills
@@ -211,12 +212,12 @@
 .............*/
 
 .skills .frameworksAndLibraries p{
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
     margin-right: 5px;
 }
 .skills .frameworksAndLibraries ul li {
     padding-left: 15px;
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
 }
 /* ..........
 *   2.Skills
@@ -224,12 +225,12 @@
 .............*/
 
 .skills .developmentTools p{
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
     margin-right: 5px;
 }
 .skills .developmentTools ul li {
     padding-left: 15px;
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
 }
 
 /* ..........
@@ -239,12 +240,12 @@
 
 
 .skills .other p{
-  font-size: var(--font-big);
+  font-size: var(--font-medium);
   margin-right: 5px;
 }
 .skills .other ul li {
   padding-left: 15px;
-  font-size: var(--font-big);
+  font-size: var(--font-medium);
 }
 /* ..........
 *   3.Education
@@ -286,9 +287,14 @@
 /* ..........
 *  6.Certificate
 .............*/
-.Experience ul{
+.certificate{
+  display: none
+  ;
+}
+.certificate ul{
   list-style-position: inside;
 }
+
 /* responsive */
 /* a4 = 8.3*11.7 in size*/
 @media screen and (min-width:1010px){
