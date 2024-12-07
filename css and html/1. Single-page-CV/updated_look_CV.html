@@ -1,257 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <!DOCTYPE html>
-        <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MD Abid Sarkar's CV showcasing education, technical skills, and projects.">
+        <title>My CV</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+            integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description"
-                content="MD Abid Sarkar's CV showcasing education, technical skills, and projects.">
 
-            <title>My CV</title>
-            <link rel="stylesheet" href="style2.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-                integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-        </head>
+    </head>
 
-<body class="flexCenter flexCol">
-    <div class="print-button flexItem">
-        <button ">Save as PDF</button>
-    </div>
+    <body class="flexCenter flexCol">
+        <div class="print-button flexItem">
+            <button onclick="downloadPDF()" id="downloadPdf">Save as PDF</button>
+        </div>
 
-    <main class=" main desktop ">
-        <div class=" header flexCol">
-            <div class="header1 ptb">
-                <h1 class="name">
-                    MD ABID SARKAR
-                </h1>
+        <main class=" main desktop ">
+            <div class=" header flexCol">
+                <div class="header1 ptb">
+                    <h1 class="name">
+                        MD ABID SARKAR
+                    </h1>
+                </div>
+                <div class="header2 flexRow flexCenter flexWarp">
+
+                    <a class="email flexRow flexCenter gapSmall" href="mailto:abidsarkar0@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        abidsarkar0@gmail.com
+                    </a>
+                    <!-- email -->
+
+                    <a class="phone flexRow flexCenter gapSmall" href="tel:+8801798706939" target="_blank">
+                        <i class="fa-solid fa-phone"></i>
+                        +8801798706939
+                    </a>
+
+                    <!-- phone number -->
+                    <p class="address flexRow flexCenter gapSmall">
+                        <i class="fa-solid fa-location-dot "></i>
+                        Aftabnagar,Badda,Dhaka
+                    </p>
+                    <!--  Address-->
+                    <a class="linkLinkedin flexRow flexCenter gapSmall"
+                        href="https://www.linkedin.com/in/md-abid-sarkar-556903290/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        md-abid-sarkar-556903290/
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="linkGithub flexRow flexCenter gapSmall" href="https://github.com/abidsarkar"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        abidsarkar
+                    </a>
+                    <!-- Github -->
+
+                </div>
             </div>
-            <div class="header2 flexRow flexCenter flexWarp">
+            <!-- header information about myself -->
+            <section class="section">
+                <p>TECHNICAL SKILLS</p>
+            </section>
+            <div class="skills">
+                <div class="language flexRow flexBaseLine">
+                    <p class="flexRow ">&#10070<strong>Programming Language:</strong></p>
+                    <ul class="flexRow flexWarp ">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python </li>
+                        <li>Java (basic)</li>
+                        <li>Javascript </li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <!--Programming language skill -->
+                <div class="database flexRow flexBaseLine">
+                    <p class="flexRow ">&#10070<strong>Database:</strong></p>
+                    <ul class="flexRow flexWarp ">
+                        <li>Oracle database</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <!-- Database skill -->
+                <div class="frameworksAndLibraries flexRow flexBaseLine">
+                    <p class="flexRow ">&#10070<strong>Frameworks & Libraries:</strong></p>
+                    <ul class="flexRow flexWarp ">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Tailwind</li>
+                    </ul>
+                </div>
+                <!-- Frameworks & Libraries: skill -->
+                <div class="developmentTools flexRow flexBaseLine">
+                    <p class="flexRow ">&#10070<strong>Development Tools & Platforms:</strong></p>
+                    <ul class="flexRow flexWarp ">
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>NPM</li>
+                        <li>Auto CAD</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+                <!-- >Development Tools & Platforms skill -->
+                <div class="other flexRow flexBaseLine">
+                    <p class="flexRow ">&#10070<strong>Other:</strong></p>
+                    <ul class="flexRow flexWarp ">
+                        <li>Microsoft applications(Office,Excel,Power Point)</li>
+                        <li>Figma</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <!-- Other skills -->
+            </div>
+            <!-- skills -->
+            <section class="section">
+                <p>EDUCATION</p>
+            </section>
+            <div class="education flexCol">
+                <div class="univercity flexRow flexNoWarp gapSmall">
+                    <p>&#10070<strong>East West University :</strong></p>
+                    <p>Bachelor of Science in Computer Science and Engineering</p>
+                    <p class="end">(May,2024)</p>
+                </div>
+                <div class="major flexRow flexNoWarp gapSmall">
+                    <p>&#10070<strong>Major : </strong></p>
+                    <p>Intelligent Systems and Data Science</p>
+                    <p class="end"><strong>CGPA:</strong>3.12 (out of 4.00)</p>
+                </div>
 
-                <a class="email flexRow flexCenter gapSmall" href="mailto:abidsarkar0@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    abidsarkar0@gmail.com
-                </a>
-                <!-- email -->
+            </div>
+            <!-- education -->
+            <section class="section">
+                <p>PROJECT</p>
+            </section>
+            <div class="project flexCol">
+                <div class="subProject flexCol">
+                    <div class="projectTitle flexRow gapSmall ">
+                        <strong>School Events Management Android App</strong>
+                        <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="projectDetails">
+                        <ul>
+                            <li>An Android app that allows teachers to manage and add school events, and provides
+                                students with
+                                a view of upcoming events.</li>
+                            <li>Firebase Authentication for secure login and Firebase Realtime Database for storing
+                                event data
+                            </li>
+                            <li> <i>Technologies Used: </i> Java, Firebase Authentication, Firebase Realtime Database,
+                                Android
+                                Studio</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- project 1 -->
+                <div class="subProject flexCol">
+                    <div class="projectTitle flexRow gapSmall ">
+                        <strong>Responsive web weather app </strong>
+                        <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="projectDetails">
+                        <ul>
+                            <li>Real-time weather data for any city using the OpenWeather API.</li>
+                            <li>Displays temperature, humidity, wind speed, and weather icons dynamically. </li>
+                            <li> <i>Technologies Used: </i> HTML, CSS, JavaScript, OpenWeather API</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- project 2 -->
+                <div class="subProject flexCol">
+                    <div class="projectTitle flexRow gapSmall ">
+                        <strong>Your information an web app with Api</strong>
+                        <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                    <div class="projectDetails">
+                        <ul>
+                            <li>An Web app that show ip address, GeoLocation Map,current city weather and time when user
+                                visit
+                                it </li>
+                            <li>Multiple API from OpenWeather, Google developer, Ipinfo used to collect and show
+                                information
+                            </li>
+                            <li> <i>Technologies Used: </i> HTML, CSS, JavaScript, API</li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <!-- project -->
 
-                <a class="phone flexRow flexCenter gapSmall" href="tel:+8801798706939" target="_blank">
-                    <i class="fa-solid fa-phone"></i>
-                    +8801798706939
-                </a>
+                <section class="section">
+                    <p>HONOR & AWARD</p>
+                </section>
+                <div class="honerAndAward flexCol">
+                    <ul>
+                        <li>Intra university programming contest Spring 2021 (3rd in junior category)</li>
+                        <li>Victory Day Intra University AutoCAD Competition, Dec 16,2022 (2nd in senior category)
+                            Host-East West University, Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+                <!-- Honor and Award -->
+                <section class="section">
+                    <p>Research Experience</p>
+                </section>
+                <div class="Experience flexCol">
+                    <div class="experienceTitle flexRow">
+                        <strong>Advancing Delay-Tolerant Networking: ML, Real-World Applications, and Automated Data
+                            Processing</strong>
+                        <div class="end">(jan 2023- jan 2024)</div>
+                    </div>
 
-                <!-- phone number -->
-                <p class="address flexRow flexCenter gapSmall">
-                    <i class="fa-solid fa-location-dot "></i>
-                    Aftabnagar,Badda,Dhaka
-                </p>
-                <!--  Address-->
-                <a class="linkLinkedin flexRow flexCenter gapSmall"
-                    href="https://www.linkedin.com/in/md-abid-sarkar-556903290/" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    md-abid-sarkar-556903290/
-                </a>
-                <!-- Linkedin -->
-                <a class="linkGithub flexRow flexCenter gapSmall" href="https://github.com/abidsarkar" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    abidsarkar
-                </a>
-                <!-- Github -->
-
-            </div>
-    </div>
-    <!-- header information about myself -->
-    <section class="section">
-        <p>TECHNICAL SKILLS</p>
-    </section>
-    <div class="skills">
-        <div class="language flexRow flexBaseLine">
-            <p class="flexRow ">&#10070<strong>Programming Language:</strong></p>
-            <ul class="flexRow flexWarp ">
-                <li>C</li>
-                <li>C++</li>
-                <li>Python </li>
-                <li>Java (basic)</li>
-                <li>Javascript </li>
-                <li>SQL</li>
-            </ul>
-        </div>
-        <!--Programming language skill -->
-        <div class="database flexRow flexBaseLine">
-            <p class="flexRow ">&#10070<strong>Database:</strong></p>
-            <ul class="flexRow flexWarp ">
-                <li>Oracle database</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-            </ul>
-        </div>
-        <!-- Database skill -->
-        <div class="frameworksAndLibraries flexRow flexBaseLine">
-            <p class="flexRow ">&#10070<strong>Frameworks & Libraries:</strong></p>
-            <ul class="flexRow flexWarp ">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Tailwind</li>
-            </ul>
-        </div>
-        <!-- Frameworks & Libraries: skill -->
-        <div class="developmentTools flexRow flexBaseLine">
-            <p class="flexRow ">&#10070<strong>Development Tools & Platforms:</strong></p>
-            <ul class="flexRow flexWarp ">
-                <li>Git</li>
-                <li>Docker</li>
-                <li>NPM</li>
-                <li>Auto CAD</li>
-                <li>Android Studio</li>
-            </ul>
-        </div>
-        <!-- >Development Tools & Platforms skill -->
-        <div class="other flexRow flexBaseLine">
-            <p class="flexRow ">&#10070<strong>Other:</strong></p>
-            <ul class="flexRow flexWarp ">
-                <li>Microsoft applications(Office,Excel,Power Point)</li>
-                <li>Figma</li>
-                <li>Linux</li>
-            </ul>
-        </div>
-        <!-- Other skills -->
-    </div>
-    <!-- skills -->
-    <section class="section">
-        <p>EDUCATION</p>
-    </section>
-    <div class="education flexCol">
-        <div class="univercity flexRow flexNoWarp gapSmall">
-            <p>&#10070<strong>East West University :</strong></p>
-            <p>Bachelor of Science in Computer Science and Engineering</p>
-            <p class="end">(May,2024)</p>
-        </div>
-        <div class="major flexRow flexNoWarp gapSmall">
-            <p>&#10070<strong>Major : </strong></p>
-            <p>Intelligent Systems and Data Science</p>
-            <p class="end"><strong>CGPA:</strong>3.12 (out of 4.00)</p>
-        </div>
-
-    </div>
-    <!-- education -->
-    <section class="section">
-        <p>PROJECT</p>
-    </section>
-    <div class="project flexCol">
-        <div class="subProject flexCol">
-            <div class="projectTitle flexRow gapSmall ">
-                <strong>School Events Management Android App</strong>
-                <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    Source Code
-                </a>
-            </div>
-            <div class="projectDetails">
-                <ul>
-                    <li>An Android app that allows teachers to manage and add school events, and provides students with
-                        a view of upcoming events.</li>
-                    <li>Firebase Authentication for secure login and Firebase Realtime Database for storing event data
-                    </li>
-                    <li> <i>Technologies Used: </i> Java, Firebase Authentication, Firebase Realtime Database, Android
-                        Studio</li>
-                </ul>
-            </div>
-        </div>
-        <!-- project 1 -->
-        <div class="subProject flexCol">
-            <div class="projectTitle flexRow gapSmall ">
-                <strong>Responsive web weather app </strong>
-                <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    Source Code
-                </a>
-            </div>
-            <div class="projectDetails">
-                <ul>
-                    <li>Real-time weather data for any city using the OpenWeather API.</li>
-                    <li>Displays temperature, humidity, wind speed, and weather icons dynamically. </li>
-                    <li> <i>Technologies Used: </i> HTML, CSS, JavaScript, OpenWeather API</li>
-                </ul>
-            </div>
-        </div>
-        <!-- project 2 -->
-        <div class="subProject flexCol">
-            <div class="projectTitle flexRow gapSmall ">
-                <strong>Your information an web app with Api</strong>
-                <a class="linkGithub end linkStyleNone" href="https://github.com/abidsarkar" target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    Source Code
-                </a>
-            </div>
-            <div class="projectDetails">
-                <ul>
-                    <li>An Web app that show ip address, GeoLocation Map,current city weather and time when user visit
-                        it </li>
-                    <li>Multiple API from OpenWeather, Google developer, Ipinfo used to collect and show information
-                    </li>
-                    <li> <i>Technologies Used: </i> HTML, CSS, JavaScript, API</li>
-                </ul>
-            </div>
-            <!-- </div> -->
-        </div>
-        <!-- project -->
-
-        <section class="section">
-            <p>HONOR & AWARD</p>
-        </section>
-        <div class="honerAndAward flexCol">
-            <ul>
-                <li>Intra university programming contest Spring 2021 (3rd in junior category)</li>
-                <li>Victory Day Intra University AutoCAD Competition, Dec 16,2022 (2nd in senior category)
-                    Host-East West University, Dhaka, Bangladesh</li>
-            </ul>
-        </div>
-        <!-- Honor and Award -->
-        <section class="section">
-            <p>Research Experience</p>
-        </section>
-        <div class="Experience flexCol">
-            <div class="experienceTitle flexRow">
-                <strong>Advancing Delay-Tolerant Networking: ML, Real-World Applications, and Automated Data
-                    Processing</strong>
-                <div class="end">(jan 2023- jan 2024)</div>
-            </div>
-
-            <ul>
-                <li><i> ML-Based Routing Optimization:</i> Developed and implemented innovative ML algorithms to
-                    significantly improve data delivery efficiency and reliability in DTN environments.</li>
-                <li><i>Real-World Application Development:</i> Designed and built an Android application to enable
-                    practical DTN communication, empowering users to leverage their devices as mobile nodes.</li>
-                <li><i>Tools and Technologies:</i> Python, TensorFlow, Android Studio,One Simulator , Linux, SCRAM
-                    methodology</li>
-            </ul>
-        </div>
-        <!-- experience -->
-        <!-- <section class="section">
+                    <ul>
+                        <li><i> ML-Based Routing Optimization:</i> Developed and implemented innovative ML algorithms to
+                            significantly improve data delivery efficiency and reliability in DTN environments.</li>
+                        <li><i>Real-World Application Development:</i> Designed and built an Android application to
+                            enable
+                            practical DTN communication, empowering users to leverage their devices as mobile nodes.
+                        </li>
+                        <li><i>Tools and Technologies:</i> Python, TensorFlow, Android Studio,One Simulator , Linux,
+                            SCRAM
+                            methodology</li>
+                    </ul>
+                </div>
+                <!-- experience -->
+                <!-- <section class="section">
             <p>Certificate</p>
         </section> -->
-        <div class="certificate flexCol">
-            <ul>
-                <li>Intra university programming contest Spring 2021 (3rd in junior category)</li>
-                <li>Victory Day Intra University AutoCAD Competition, Dec 16,2022 (2nd in senior category)
-                    Host-East West University, Dhaka, Bangladesh</li>
-            </ul>
-        </div>
-        <!-- certificate -->
+                <div class="certificate flexCol">
+                    <ul>
+                        <li>Intra university programming contest Spring 2021 (3rd in junior category)</li>
+                        <li>Victory Day Intra University AutoCAD Competition, Dec 16,2022 (2nd in senior category)
+                            Host-East West University, Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+                <!-- certificate -->
         </main>
-        <script src="sccript.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
-</html>
+    </html>
